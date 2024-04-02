@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+</head>
+<body class="dark-theme">
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img class="movie-logo" src="./assets/pokemonlogo.webp" alt="">
+            </figure>
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <a class="nav__link--anchor link__hover-effect" href="">Home</a>
+                </li>
+                <li class="nav__link">
+                    <a class="nav__link--anchor link__hover-effect" href=""></a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class="nav__link--anchor link__hover-effect">
+                        <i class="fas fa-adjust"></i>
+                    </a>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Best <span class="blue">Pokemon</span> search engine platform</h1>
+                <h2 class="sub-title">Find a new favourite <span class="yellow">Pokemon</span></h2>
+                <div class="search">
+                    <input id="pokemonName" class="search-bar" type="text" placeholder="search for a Pokemon"></input>
+                    <button class="search-btn" onclick="fetchData()">Go</button>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="row">
+                <div class="pokemon__wrapper">
+                <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+                </div>
+            </div>
+        </section>
+</body>
+</html>

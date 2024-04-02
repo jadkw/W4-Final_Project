@@ -1,0 +1,244 @@
+*{
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+   }
+   
+   html{
+       scroll-behavior: smooth;
+   }
+   
+   li{
+       list-style-type: none;
+   }
+   
+   a{
+       text-decoration: none;
+   }
+   
+   button{
+       cursor: pointer;
+   }
+   
+   p{
+       font-size: 16px;
+       line-height: 1;
+   }
+   
+   h1{
+       font-size: 48px;
+   }
+   
+   h2{
+       font-size: 28px;
+   }
+   
+   .row{
+       width: 100%;
+       max-width: 1100px;
+       margin: 0 auto;
+       padding: 0 12px;
+   }
+   
+   .container{
+       padding: 50px 0;
+   }
+
+   .blue{
+    color: #0075BE;
+   }
+
+   .yellow{
+    color:#FFCC00;
+   }
+   
+     
+   .dark-theme .title,
+   .dark-theme .sub-title,
+   .dark-theme .nav__link--anchor{
+       color: white;
+   }
+
+      
+   .dark-theme section{
+       background-color: #242424;
+   }
+   
+   section{
+       transition: all 350ms ease;
+   }
+   
+   /* 
+
+LANDING PAGE
+
+*/
+
+
+#landing-page{
+    min-height: 100vh;
+    animation: fade-up 1s 1s ease-in-out;
+}
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header{
+    margin: 40px 40px;
+}
+
+.header-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.title{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.sub-title{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.search{
+    display: flex;
+}
+
+.search-bar{
+background-color: #fff;
+border-radius: 20px;
+border: 1px solid rgb(168, 172, 168);
+padding: 0 15px 0 25px;
+height: 50px;
+line-height: 40px;
+width: 100%;
+transition: all 300ms ease;
+}
+
+.search-btn{
+ border-radius: 20px;   
+ box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.3);
+ width: 120px;
+ height: 50px;
+ margin-left: 20px;
+ padding: 1px 6px;
+ font-size: 18px;
+ font-weight: 600;
+ border: none;
+ background-color: #0075BE;
+ color: #fff;
+ transition: all 400ms ease;
+}
+
+
+.search-btn:hover{
+ background-color: #fff;
+ color: #FFCC00;
+ border: 1px solid #FFCC00;
+ transform: scale(1.05);
+}
+
+.search-btn:active{
+    transform: scale(0.8);
+}
+
+input:hover {
+border-color: #4682b4;
+}
+
+input:active,
+input:focus{
+border-color: #4682b4;
+}
+
+/*
+
+NAV 
+
+*/
+
+.movie-logo{
+    width: 100px;
+    height: 100px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100px;
+}
+
+.nav__links{
+    display: flex;
+}
+
+.nav__link{
+    margin: 0 12px;
+}
+
+.nav__link--anchor{
+  font-size: 20px;
+  color: #0075BE;  
+  font-weight: 700;
+}
+
+.link__hover-effect{
+    position: relative;
+}
+
+.link__hover-effect:hover:after{
+    left: 0;
+    width: 100%;
+}
+
+.link__hover-effect::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    background-color: #FFCC00;
+    transition: all 300ms ease;
+}
+
+/*
+
+POKEMON
+
+*/
+
+.pokemon__wrapper {
+    padding: 28px 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokemon__img {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    max-width: 300px;
+    position: relative;
+}
